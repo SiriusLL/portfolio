@@ -1,0 +1,13 @@
+.navbar {
+  height: 80px;
+  background-color: grey;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  list-style-type: none;
+}

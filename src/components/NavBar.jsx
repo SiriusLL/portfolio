@@ -1,19 +1,30 @@
 import React from "react";
+import "./NavBar.css";
 
 function NavBar() {
   return (
-    <>
-      <div>logo</div>
-      <div>
+    <div className="navbar">
+      {/* <div>logo</div> */}
+      <div className="nav-menu">
         <ul>
-          <li>logo</li>
-          <li>one</li>
-          <li>two</li>
-          <li>three</li>
-          <li>four</li>
+          <li>
+            <button>logo</button>
+          </li>
+          <li>
+            <button>one</button>
+          </li>
+          <li>
+            <button>two</button>
+          </li>
+          <li>
+            <button>three</button>
+          </li>
+          <li>
+            <button>four</button>
+          </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 
