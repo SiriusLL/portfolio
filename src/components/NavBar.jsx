@@ -2,6 +2,9 @@ import React from "react";
 import "./NavBar.css";
 
 function NavBar() {
+  const nav = document.querySelector("#main");
+
+  function fixNav() {}
   return (
     <div className="navbar">
       {/* <div>logo</div> */}
