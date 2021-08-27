@@ -26,6 +26,10 @@ nav {
   z-index: 1;
 }
 
+.nav-menu > .active {
+  border: 1px solid red;
+}
+
 .fixed-nav nav {
   position: fixed;
   box-shadow: 0 5px rgba(0, 0, 0, 0.1);

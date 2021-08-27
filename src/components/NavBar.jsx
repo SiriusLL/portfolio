@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { Link } from "react-scroll";
 import "./NavBar.css";
 
 function NavBar() {
@@ -54,21 +55,81 @@ function NavBar() {
       {/* <div>{scrollPosition}</div> */}
       <nav className="nav-menu">
         <ul>
-          <li>
-            <button>logo</button>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <li>
+              <button>Contact</button>
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="resume"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <li>
+              <button>Resume</button>
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <li>
+              <button>Skills</button>
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <li>
+              <button>Projects</button>
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="Experience"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <li>
+              <button>Experience</button>
+            </li>
+          </Link>
+          {/* <li>
+            <button>Contact</button>
           </li>
           <li>
-            <button>one</button>
+            <button>Resume</button>
           </li>
           <li>
-            <button>two</button>
+            <button>Skills</button>
           </li>
           <li>
-            <button>three</button>
+            <button>Projects</button>
           </li>
           <li>
-            <button>four</button>
-          </li>
+            <button>Experience</button>
+          </li> */}
         </ul>
       </nav>
       {/* <div>{scrollPosition}</div> */}
