@@ -1,33 +1,69 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./NavBar.css";
 
 function NavBar() {
-  // const nav = document.querySelector("#navb");
-  // ReactDOM.render(nav);
-  // console.log("nav", nav);
-  // const topOfNav = nav.offsetTop;
+  // const [scrollPosition, setScrollPosition] = useState(0);
 
-  // function fixNav() {
-  //   // console.log(topOfNav, window.scrollY);
-  //   if (window.scrollY >= topOfNav) {
-  //     document.body.style.paddingTop = nav.offsetHeight + "px";
-  //     document.body.classList.add("fixed-nav");
-  //   } else {
-  //     document.body.style.paddingTop = 0;
-  //     document.body.classList.remove("fixed-nav");
-  //   }
-  // }
-  useEffect(() => {});
-  window.addEventListener("scroll", fixNav);
+  // const handleScroll = () => {
+  //   const position = window.pageYOffset;
+  //   setScrollPosition(position);
+  // };
 
-  function fixNav() {}
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll, { passive: true });
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+  const mainRef = useRef(null);
+
+  const sectionRefs = [{ section: "Main", ref: mainRef }];
+
+  const scrollTo = (element) => {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {};
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const getDimensions = (element) => {
+    const { height } = element.getBoundingClientRect();
+    const offsetTop = element.offsetTop;
+    const offsetBottom = offsetTop + height;
+
+    return {
+      height,
+      offsetTop,
+      offsietBottom,
+    };
+  };
+
   return (
     <div id="navb" className="navbar">
-      {/* <div>logo</div> */}
+      {/* <div>{scrollPosition}</div> */}
       <nav className="nav-menu">
         <ul>
           <li>
-            <button>logo</button>
+            <button
+              type="button"
+              className="something1"
+              onClick={() => {
+                scrollTo(mainRef.current);
+              }}
+            >
+              logo
+            </button>
           </li>
           <li>
             <button>one</button>
@@ -43,6 +79,7 @@ function NavBar() {
           </li>
         </ul>
       </nav>
+      <div>{scrollPosition}</div>
     </div>
   );
 }

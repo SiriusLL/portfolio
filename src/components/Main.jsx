@@ -1,6 +1,6 @@
 const Main = () => {
   return (
-    <div class="site-wrap">
+    <div class="section" id="Main" ref={mainRef}>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
         tempora rerum, est autem cupiditate, corporis a qui libero ipsum
