@@ -55,11 +55,7 @@ function NavBar() {
       <nav className="nav-menu">
         <ul>
           <li>
-            <button
-            
-            >
-              logo
-            </button>
+            <button>logo</button>
           </li>
           <li>
             <button>one</button>
@@ -75,7 +71,7 @@ function NavBar() {
           </li>
         </ul>
       </nav>
-      <div>{scrollPosition}</div>
+      {/* <div>{scrollPosition}</div> */}
     </div>
   );
 }

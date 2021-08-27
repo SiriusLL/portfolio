@@ -1,5 +1,7 @@
+import "./Projects.css";
+
 const Projects = () => {
-  return <div>Projects</div>;
+  return <div className="projects-section">Projects</div>;
 };
 
 export default Projects;

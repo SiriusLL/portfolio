@@ -1,5 +1,7 @@
+import "./Skills.css";
+
 const Skills = () => {
-  return <div>Skills</div>;
+  return <div className="skills-section">Skills</div>;
 };
 
 export default Skills;
