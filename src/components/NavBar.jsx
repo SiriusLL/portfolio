@@ -17,37 +17,37 @@ function NavBar() {
   //   };
   // }, []);
 
-  const mainRef = useRef(null);
+  // const mainRef = useRef(null);
 
-  const sectionRefs = [{ section: "Main", ref: mainRef }];
+  // const sectionRefs = [{ section: "Main", ref: mainRef }];
 
-  const scrollTo = (element) => {
-    element.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
+  // const scrollTo = (element) => {
+  //   element.scrollIntoView({
+  //     behavior: "smooth",
+  //     block: "start",
+  //   });
+  // };
 
-  useEffect(() => {
-    const handleScroll = () => {};
+  // useEffect(() => {
+  //   const handleScroll = () => {};
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
-  const getDimensions = (element) => {
-    const { height } = element.getBoundingClientRect();
-    const offsetTop = element.offsetTop;
-    const offsetBottom = offsetTop + height;
+  // const getDimensions = (element) => {
+  //   const { height } = element.getBoundingClientRect();
+  //   const offsetTop = element.offsetTop;
+  //   const offsetBottom = offsetTop + height;
 
-    return {
-      height,
-      offsetTop,
-      offsietBottom,
-    };
-  };
+  //   return {
+  //     height,
+  //     offsetTop,
+  //     offsietBottom,
+  //   };
+  // };
 
   return (
     <div id="navb" className="navbar">
@@ -56,11 +56,7 @@ function NavBar() {
         <ul>
           <li>
             <button
-              type="button"
-              className="something1"
-              onClick={() => {
-                scrollTo(mainRef.current);
-              }}
+            
             >
               logo
             </button>
