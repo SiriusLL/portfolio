@@ -5,8 +5,10 @@ function Hero() {
   return (
     <div className="hero">
       <video src="/videos/video-1.mp4" autoPlay loop muted />
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
+      <div className="header-content">
+        <h1>HELLO!!</h1>
+        <p>My name is James</p>
+      </div>
     </div>
   );
 }
