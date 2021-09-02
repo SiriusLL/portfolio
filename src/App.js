@@ -9,15 +9,12 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 
 function App() {
-  const [heroHeight, setHeroHeight] = useState(undefined);
-  // const heroRef = useRef(null);
-  // const doTheThing = () => {
-  //   return console.log("theThing", heroRef.current.offsetHeight);
-  // };
+  const [heroHeight, setHeroHeight] = useState([]);
+
   return (
     <div className="App">
       <Hero setHeroHeight={setHeroHeight} />
-      <NavBar />
+      <NavBar heroHeight={heroHeight && heroHeight} />
       {heroHeight}
       <Contact />
       <Resume />

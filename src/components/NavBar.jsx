@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-scroll";
 import "./NavBar.css";
 
-function NavBar() {
+function NavBar({ heroHeight }) {
   // const [scrollPosition, setScrollPosition] = useState(0);
 
   // const handleScroll = () => {
@@ -54,9 +54,10 @@ function NavBar() {
   const ref = useRef(null);
 
   const handleScroll = () => {
+    console.log("h", heroHeight);
     const offset = window.scrollY;
     // console.log(ref.heroHeight.clientHeight);
-    if (offset > 675) {
+    if (offset >= heroHeight) {
       setScrolled(true);
     } else {
       setScrolled(false);
