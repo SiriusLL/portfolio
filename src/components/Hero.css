@@ -16,14 +16,15 @@ video {
   width: 100%;
 }
 
-.header-content {
+.hero-content {
   position: absolute;
-  z-index: 888;
+  z-index: 999;
   margin: 0 auto;
   width: 50%;
   top: 70%;
-  left: 45%;
+  left: 50%;
   /* margin-top: -100px; */
-  /* margin-left: -250px; */
+  margin-left: -150px;
+  /* text-align: center; */
   color: darkturquoise;
 }

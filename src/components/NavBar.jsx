@@ -50,8 +50,29 @@ function NavBar() {
   //   };
   // };
 
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    console.log(ref.heroHeight.clientHeight);
+    if (offset > 675) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
+  let stick = ["navbar"];
+  if (scrolled) {
+    stick.push("fixed-nav");
+  }
+
   return (
-    <div id="navb" className="navbar">
+    <div id="navb" className={stick.join(" ")}>
       {/* <div>{scrollPosition}</div> */}
       <nav className="nav-menu">
         <ul>

@@ -3,9 +3,9 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <div className="hero">
+    <div className="hero" ref="heroHeight">
       <video src="/videos/video-1.mp4" autoPlay loop muted />
-      <div className="header-content">
+      <div className="hero-content">
         <h1>HELLO!!</h1>
         <p>My name is James</p>
       </div>
