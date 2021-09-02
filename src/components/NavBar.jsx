@@ -51,10 +51,11 @@ function NavBar() {
   // };
 
   const [scrolled, setScrolled] = useState(false);
+  const ref = useRef(null);
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    console.log(ref.heroHeight.clientHeight);
+    // console.log(ref.heroHeight.clientHeight);
     if (offset > 675) {
       setScrolled(true);
     } else {
