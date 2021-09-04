@@ -9,7 +9,7 @@ const Projects = () => {
     "project5",
   ];
   const projectCarasole = projectList.map((projectItem, index) => {
-    return <div className={`project${a + index}`}>{projectItem}</div>;
+    return <div className={`project${index + 1}`}>{projectItem}</div>;
   });
   return (
     <div className="projects-section" id="projects">
