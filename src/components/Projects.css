@@ -1,11 +1,46 @@
 .projects-section {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
   height: 100vh;
   background-color: mediumpurple;
 }
 
 .project1 {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  background-color: blue;
+  border: 1px solid red;
+}
+
+.project2 {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  background-color: blue;
+  border: 1px solid red;
+}
+.project3 {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  background-color: blue;
+  border: 1px solid red;
+}
+.project4 {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  background-color: blue;
+  border: 1px solid red;
+}
+.project5 {
   width: 150px;
   height: 150px;
   padding: 10px;

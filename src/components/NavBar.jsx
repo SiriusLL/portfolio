@@ -54,7 +54,7 @@ function NavBar({ heroHeight }) {
   const ref = useRef(null);
 
   const handleScroll = () => {
-    console.log("h", heroHeight);
+    // console.log("h", heroHeight);
     const offset = window.scrollY;
     // console.log(ref.heroHeight.clientHeight);
     if (offset >= heroHeight) {

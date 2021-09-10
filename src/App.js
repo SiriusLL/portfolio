@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Hero setHeroHeight={setHeroHeight} />
       <NavBar heroHeight={heroHeight && heroHeight} />
-      {heroHeight}
+      {/* {heroHeight} */}
       <Contact />
       <Resume />
       <Skills />
