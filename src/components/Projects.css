@@ -5,7 +5,8 @@
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  background-color: mediumpurple;
+  /* background-color: mediumpurple; */
+  background-color: #2d2d2d;
 }
 
 .projects {

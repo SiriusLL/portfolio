@@ -1,4 +1,5 @@
 .contact-section {
   height: calc(100vh - 50px);
-  background-color: mediumturquoise;
+  /* background-color: mediumturquoise; */
+  background-color: #191919;
 }

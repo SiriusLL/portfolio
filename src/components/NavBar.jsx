@@ -51,7 +51,7 @@ function NavBar({ heroHeight }) {
   // };
 
   const [scrolled, setScrolled] = useState(false);
-  const ref = useRef(null);
+  // const ref = useRef(null);
 
   const handleScroll = () => {
     // console.log("h", heroHeight);
@@ -84,7 +84,7 @@ function NavBar({ heroHeight }) {
               to="contact"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-300}
               duration={500}
             >
               <button>Contact</button>
@@ -96,7 +96,7 @@ function NavBar({ heroHeight }) {
               to="resume"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-50}
               duration={500}
             >
               <button>Resume</button>
@@ -108,7 +108,7 @@ function NavBar({ heroHeight }) {
               to="skills"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-55}
               duration={500}
             >
               <button>Skills</button>
@@ -120,7 +120,7 @@ function NavBar({ heroHeight }) {
               to="projects"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-55}
               duration={500}
             >
               <button>Projects</button>
@@ -132,7 +132,7 @@ function NavBar({ heroHeight }) {
               to="experience"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-55}
               duration={500}
             >
               <button>Experience</button>
